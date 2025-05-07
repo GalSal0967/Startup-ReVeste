@@ -1,126 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Doações</title>
-  <link rel="stylesheet" href="_css/doacao.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="website icon" href="_img/IconeR.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="_css/doacao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header class="header">
-    <div class="header-container">
+    <header class="header">
+        <div class="header-container">
+          
+          <!-- Logo -->
+          <div class="logo">
+            <a href="index.html">ReVeste</a>
+          </div>
+      
+          <!-- Navegação -->
+          <nav class="nav-links">
+            <a href="shop_masculino.html" id="shop_masculino">MASCULINO</a>
+            <a href="shop_feminino.html" id="shop_feminino">FEMININO</a>
+            <a href="acessiveis.html" id="shop_acessiveis">ADELO</a>
+            <a href="doacao.html" id="aba_doacoes">DOAÇÕES</a>
+          </nav>
+      
+          <!-- Barra de busca (inicialmente oculta) -->
+          <div class="search-container" id="search-container">
+            <input type="text" placeholder="Buscar..." class="search-input">
+          </div>
+      
+          <!-- Ícones -->
+            <div class="header-icons">
+              <a href="#" title="Buscar" onclick="toggle_pesquisa()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a href="#" id="cart-btn" title="Carrinho" onclick="toggleCarrinho()">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+              <a href="login.html" title="Login"><i class="fa-solid fa-user"></i></a>
+              <a href="trocar_pontos.html" title="Pontos"><i class="fa-solid fa-medal"></i></a>
+            </div>
+            </div>
+      </header>
+      
+      
+      <!-- Modal do carrinho -->
+      
+      <div class="carrinho" id="carrinho">
+        <div class="texto_emcima_carrinho">
+          <p>CARRINHO <i class="fas fa-shopping-cart" id="iconeCarrinho"></i></p>
+      
+          <div class="icone_x"  id="close-cart">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+        <div class="texto_inicial">
+          <h1>O seu Carrinho ainda está vazio.</h1>
+          <h1>Sugestões:</h1>
+      
+          <a href="shop_masculino.html"><button>MASCULINO</button></a>
+          <a href="shop_feminino.html"><button>FEMININO</button></a>
+          <a href="acessiveis.html"><button>ADELO</button></a>
+        </div>
+      </div>
+      
 
-      <!-- Logo -->
-      <div class="logo">
-        <a href="index.html">ReVeste</a>
+      <div class="boxe_texto_cima">
+
+ 
+      <div class="texto_doacao">
+        <h1>Doe Roupas e transforme Vidas</h1>
+        <p>Ajude quem precisa com o que você Não usa mais</p>
       </div>
 
-      <!-- Navegação -->
-      <nav class="nav-links">
-        <a href="shop_masculino.html" id="shop_masculino">MASCULINO</a>
-        <a href="shop_feminino.html" id="shop_feminino">FEMININO</a>
-        <a href="acessiveis.html" id="shop_acessiveis">ADELO</a>
-        <a href="doacao.html" id="aba_doacoes">DOAÇÕES</a>
-      </nav>
-  
-      <!-- Barra de busca (inicialmente oculta) -->
-      <div class="search-container" id="search-container">
-        <input type="text" placeholder="Buscar..." class="search-input">
-      </div>
-
-      <!-- Ícones -->
-      <div class="header-icons">
-        <a href="#" title="Buscar" onclick="toggle_pesquisa()">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </a>
-        <a href="#" id="cart-btn" title="Carrinho" onclick="toggleCarrinho()">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
-        <a href="login.html" title="Login"><i class="fa-solid fa-user"></i></a>
-        <a href="login.html" title="Pontos"><i class="fa-solid fa-medal"></i></a>
-      </div>
-      </div>
-  </header>
-
-  <!-- Modal do carrinho -->
-
-<div class="carrinho" id="carrinho">
-  <div class="texto_emcima_carrinho">
-    <p>CARRINHO <i class="fas fa-shopping-cart" id="iconeCarrinho"></i></p>
-
-    <div class="icone_x"  id="close-cart">
-      <i class="fa-solid fa-x"></i>
-    </div>
-  </div>
-  <div class="texto_inicial">
-    <h1>O seu Carrinho ainda está vazio.</h1>
-    <h1>Sugestões:</h1>
-
-    <a href="shop_masculino.html"><button>MASCULINO</button></a>
-    <a href="shop_feminino.html"><button>FEMININO</button></a>
-    <a href="acessiveis.html"><button>ADELO</button></a>
-  </div>
-</div>
-
-
-  <div class="main-container">
-    <div class="left-container">
-      <h1>Unindo quem tem a quem precisa.</h1>
-      <p>Você pode fazer a diferença! Ao doar roupas em bom estado, você ajuda pessoas em situação de vulnerabilidade a
-        enfrentarem o frio, retomarem a autoestima e reconstruírem suas histórias. Cada peça que você compartilha é um
-        gesto de cuidado e solidariedade.
-
-        Separe, doe, aqueça.
-        Juntos, podemos espalhar calor humano.</p>
-    </div>
-    <div class="right-container">
-      <img src="_img/Caridade.png" alt="" srcset="">
-    </div>
-  </div>
-
-  <footer>
-    <div class="footer-container1">
-      <div class="objetivo">
-        <h3>ReVeste</h3>
-        <br>
-        <p>A ReVeste é uma plataforma de moda acessível e sustentável, que conecta doadores e beneficiários, promovendo
-          a inclusão social e o consumo consciente.</p>
-      </div>
-      <div class="contato">
-        <h3>Contato</h3>
-        <br>
-        <p>E-mail: ReVeste@gmail.com</p>
-        <p>Telefone: (11) 99999-9999</p>
-      </div>
-      <div class="links-rapidos">
-        <h3>Ajuda</h3>
-        <br>
-        <ul>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Equipe de Desenvolvimento</a></li>
-        </ul>
+      <div class="imagem_doacao">
+        <img src="_img/Caridade.png" alt="">
       </div>
     </div>
-    <hr>
-    <div class="footer-container2">
-      <div class="copy">
-        <p>&copy; 2025 ReVeste.</p>
-      </div>
-      <div class="redes-sociais">
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <div class="como_funciona">
+      <h1>Como Funciona</h1>
+    
+      <div class="icones">
+        <div class="icone_texto">
+          <i class="fa-solid fa-shirt"></i>
+          <p>1. Separe as Roupas</p>
+        </div>
+        <div class="icone_texto">
+          <i class="fa-solid fa-pencil"></i>
+          <p>2. Preencha o Formulário</p>
+        </div>
+        <div class="icone_texto">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+          <p>3. Sua Doação é enviada</p>
+        </div>
       </div>
     </div>
-  </footer>
+    
 
-  <script src="_js/script.js"></script>
+
+      <script src="_js/script.js"></script>
 </body>
 </html>
