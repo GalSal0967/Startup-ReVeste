@@ -232,7 +232,68 @@ a {
 }
 
 .icones p {
+  margin-bottom: 5rem;
   margin-top: 1.5rem;
   font-size: 1.2rem;
   color: #294d2c;
+}
+
+.texto_formulario {
+  font-size: 28px;
+  margin: 4rem;
+  color: #294d2c;
+  text-align: center;
+}
+
+.form-doacao {
+  
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 2.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.linha {
+  display: flex;
+  gap: 20px;
+}
+
+.campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #294d2c;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.botao-doacao {
+  margin-top: 20px;
+  width: 100%;
+  padding: 1.2rem;
+  background-color: #294d2c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.15rem;
+  transition: background 0.3s ease;
+}
+
+.botao-doacao:hover {
+  background-color: #1a331d;
+  transform: scale(1.02);
 }
