@@ -9,87 +9,6 @@ body {
   background-color: #f1f1f1;
 }
 
-/* Header */
-.header {
-  width: 100%;
-  background-color: rgba(244,237,221);
-  border-bottom: 1px solid #ddd;
-  padding: 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.header-container {
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-
-
-/* Logo */
-.logo img {
-  height: 100px;
-  cursor: pointer;
-  margin: 0;
-}
-
-.logo a {
-  font-size: 2rem;
-  font-family: 'Montserrat', sans-serif;
-  color: #2b5a2b;
-  font-weight: bold;
-}
-
-
-/* Navegação */
-.nav-links {
-  display: flex;
-  gap: 50px;
-}
-
-.nav-links a {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  color: #294d2c;
-  font-weight: 500;
-  font-size: 20px;
-  transition: color 0.3s;
-}
-
-a {
-  text-decoration: none; /* remove sublinhado */
-  color: inherit; /* herda a cor do h3 */
-}
-
-.nav-links a:hover {
-  color: #5dad62; /* muda para azul no hover (você pode trocar pela cor da sua marca) */
-  transform: scale(1.05);
-}
-
-/* Ícones */
-.header-icons {
-  display: flex;
-  gap: 20px;
-}
-
-.header-icons a {
-  color: #294d2c;
-  font-size: 22px;
-  transition: color 0.3s;
-}
-
-.header-icons a:hover {
-  color: #5dad62;
-  transform: scale(1.05);
-}
 
 .search-container {
   display: none;
@@ -165,87 +84,7 @@ a {
   cursor: pointer; /* Adiciona um cursor de clique para indicar que é interativo */
 }
 
-/* Footer */ 
 
-footer {
-  background-color: rgb(31, 26, 21);
-  color: #f8f8f8;
-  padding: 20px;
-  margin-top: 40rem;
-}
-
-footer h3 {
-  font-family: poppins, sans-serif;
-  font-size: 20px;
-  color: #fefafa;
-}
-
-footer p {
-  margin: 0;
-  font-size: 14px;
-  color: #fefafa;
-}
-
-footer li {
-  margin: 0;
-  font-size: 14px;
-  color: #fefafa;
-}
-
-.footer-container1 {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  margin-bottom: 35px;
-  gap: 32px;
-  text-align: left;
-}
-
-.objetivo {
-  grid-column: span 2 / span 2;
-  grid-row: span 2 / span 2;
-  margin-top: 20px;
-}
-
-.contato {
-  grid-column: span 2 / span 2;
-  grid-row: span 2 / span 2;
-  grid-column-start: 4;
-  margin-top: 20px;
-}
-
-.links-rapidos {
-  grid-column: span 2 / span 2;
-  grid-row: span 2 / span 2;
-  grid-column-start: 7;
-  margin-top: 20px;
-}
-
-
-.footer-container2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  margin-top: 35px;
-  gap: 8px;
-}
-
-.redes-sociais {
-  display: flex;
-  gap: 13px;
-}
-
-.redes-sociais i {
-  color: #f8f8f8;
-  font-size: 27px;
-  transition: color 0.3s;
-}
-
-.copy {
-  grid-column: span 2 / span 2;
-  grid-row: span 2 / span 2;
-  grid-column-start: 5;
-}
 
 
 
@@ -336,12 +175,13 @@ footer li {
   width: 30%;
   max-width: 300px;
   margin: 0;
-  border-radius: 10px;
+  border-radius: 20px;
 
 }
 
 .cards_promocoes img {
 width: 100%;
+border-radius: 20px;
 }
 
 
@@ -372,7 +212,7 @@ justify-content: space-evenly;
 
 .texto_card_promocao button {
 padding: 0.7rem 1.8rem;
-background-color: #2b5a2b;
+background-color: #294d2c;
 color: white;
 font-weight: bold;
 text-transform: uppercase;

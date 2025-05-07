@@ -10,87 +10,7 @@
     background-color: #f1f1f1;
   }
   
-  /* Header */
-  .header {
-    width: 100%;
-    background-color: rgba(244,237,221);
-    border-bottom: 1px solid #ddd;
-    padding: 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .header-container {
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  
-  
-  /* Logo */
-  .logo img {
-    height: 100px;
-    cursor: pointer;
-    margin: 0;
-  }
-  
-  .logo a {
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #2b5a2b;
-    font-weight: bold;
-  }
-
-
-  /* Navegação */
-  .nav-links {
-    display: flex;
-    gap: 50px;
-  }
-  
-  .nav-links a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    color: #294d2c;
-    font-weight: 500;
-    font-size: 20px;
-    transition: color 0.3s;
-  }
-  
-  a {
-    text-decoration: none; /* remove sublinhado */
-    color: inherit; /* herda a cor do h3 */
-  }
-
-  .nav-links a:hover {
-    color: #5dad62; /* muda para azul no hover (você pode trocar pela cor da sua marca) */
-    transform: scale(1.05);
-  }
-  
-  /* Ícones */
-  .header-icons {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .header-icons a {
-    color: #294d2c;
-    font-size: 22px;
-    transition: color 0.3s;
-  }
-  
-  .header-icons a:hover {
-    color: #5dad62;
-    transform: scale(1.05);
-  }
+ 
   
   .banner {
     position: relative; /* necessário para o botão se posicionar relativamente à div */
@@ -254,6 +174,7 @@
 
 .grid_produtos_linha1 {
   display: flex;
+  justify-content: center;
 }
 
 /* Definindo a animação */

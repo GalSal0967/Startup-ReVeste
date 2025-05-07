@@ -1,0 +1,155 @@
+.header {
+    width: 100%;
+    background-color: rgba(244, 237, 221);
+    border-bottom: 1px solid #ddd;
+    padding: 28px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: #333333 0px 0px 4px;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo a {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #2b5a2b;
+    font-weight: bold;
+  }
+  
+  
+  /* Navegação */
+  .nav-links {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #294d2c;
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .nav-links a:hover {
+    color: #5dad62;
+    transform: scale(1.05);
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header-icons a {
+    color: #294d2c;
+    font-size: 22px;
+    transition: color 0.3s;
+  }
+  
+  .header-icons a:hover {
+    color: #5dad62;
+    transform: scale(1.05);
+  }
+  @media only screen and (max-width: 450px) {
+  
+    .header {
+      width: 100vw;
+      background-color: rgba(244, 237, 221);
+      border-bottom: 1px solid #ddd;
+      padding: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: #333333 0px 0px 4px;
+      justify-content: center;
+    }
+  
+    .header-container {
+      width: 90vw;
+      height: 20px;
+      gap: 2px;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  
+    .nav-links a {
+      display: none;
+    }
+  
+    .logo a {
+      font-size: 10px;
+    }
+  
+    .banner button {
+      border-radius: 3.5px;
+      font-size: 8px;
+      padding: 1% 2%;
+    }
+  
+    .header-icons a {
+      font-size: 10px;
+      gap: 1px;
+    }
+  
+    .categories-titles {
+      width: 100vw;
+      gap: 10px;
+      margin: 32px 0;
+    }
+  
+    .grid_produtos_linha1 {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin: 32px;
+    }
+  
+    .organizar_textos_topicos {
+      display: none;
+    }
+  
+    .texto {
+      width: 35vw;
+    }
+  
+    .categories-titles h2 {
+      font-size: 10px;
+      gap: 10px;
+    }
+  
+    footer {
+      padding: 10px;
+    }
+  
+    footer h3 {
+      font-size: 10px;
+    }
+  
+    footer p {
+      font-size: 7px;
+    }
+  
+    footer li {
+      margin: 0;
+      font-size: 7px;
+    }
+  }
